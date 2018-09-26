@@ -1,0 +1,6 @@
+#include "Tool.h"
+
+int main()
+{
+	return 0;
+}

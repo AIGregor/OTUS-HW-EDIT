@@ -1,8 +1,11 @@
 #include "Tool.h"
 #include <vector>
 
-Tool::Tool()
+#include "Model.h"
+
+Tool::Tool(GrafDocument* docudent)
 {
+	m_GrafDoc = docudent;
 }
 
 Tool::~Tool()

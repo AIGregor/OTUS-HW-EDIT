@@ -5,17 +5,21 @@
 
 #include "Tool.h"
 
+using deta = std::chrono::time_point<std::chrono::system_clock>;
+
+
+/// Class Point for 2d
 class Point2D
 {
 public:
 	Point2D();
 	~Point2D();
 	
-	auto GetX();
-	auto SetX();
+	float GetX() { return m_x; };
+	void SetX(float x) { m_x = x; };
 
-	auto GetY();
-	auto SetY();
+	float GetY() { return m_y; };
+	void SetY(float y) { m_y = y; };
 
 private:
 	/// Normal		- Ќачальна€ или конечна€ точка кривой или линии
@@ -49,9 +53,8 @@ private:
 /// Model class
 /// Abstract data model
 
-class GrafDocument : public IObservable
-{
-	using deta = std::chrono::time_point<std::chrono::system_clock>;
+class GrafDocument : public Observable
+{	
 public:
 	GrafDocument();
 	~GrafDocument();

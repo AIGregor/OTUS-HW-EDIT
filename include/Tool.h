@@ -1,4 +1,8 @@
 #pragma once
+#include <vector>
+
+class GrafDocument;
+
 /// Controller class
 /// Change model, create and setting view
 
@@ -8,7 +12,7 @@ public:
 	virtual void update() = 0;
 };
 
-class IObservable
+class Observable
 {
 public:
 	void addObserver(Observer *observer)
@@ -29,13 +33,15 @@ private:
 
 class Tool
 {
-	Tool();
+public:
+	Tool(GrafDocument* docudent);
 	~Tool();
 
-public:
 	void CreateLine();
 	void CreateCircle();
 	void CreatPoint();
+
 private:
 	void CreateContour();
+	GrafDocument* m_GrafDoc;
 };

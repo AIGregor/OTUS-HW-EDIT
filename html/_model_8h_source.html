@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.6"/>
+<title>hw-edit: Исходный файл /home/travis/build/AIGregor/OTUS-HW-EDIT/include/Model.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/search.js"></script>
+<script type="text/javascript">
+  $(document).ready(function() { searchBox.OnSelectItem(0); });
+</script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td style="padding-left: 0.5em;">
+   <div id="projectname">hw-edit
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.8.6 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск');
+</script>
+  <div id="navrow1" class="tabs">
+    <ul class="tablist">
+      <li><a href="index.html"><span>Титульная&#160;страница</span></a></li>
+      <li><a href="annotated.html"><span>Классы</span></a></li>
+      <li class="current"><a href="files.html"><span>Файлы</span></a></li>
+      <li>
+        <div id="MSearchBox" class="MSearchBoxInactive">
+        <span class="left">
+          <img id="MSearchSelect" src="search/mag_sel.png"
+               onmouseover="return searchBox.OnSearchSelectShow()"
+               onmouseout="return searchBox.OnSearchSelectHide()"
+               alt=""/>
+          <input type="text" id="MSearchField" value="Поиск" accesskey="S"
+               onfocus="searchBox.OnSearchFieldFocus(true)" 
+               onblur="searchBox.OnSearchFieldFocus(false)" 
+               onkeyup="searchBox.OnSearchFieldChange(event)"/>
+          </span><span class="right">
+            <a id="MSearchClose" href="javascript:searchBox.CloseResultsWindow()"><img id="MSearchCloseImg" border="0" src="search/close.png" alt=""/></a>
+          </span>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div id="navrow2" class="tabs2">
+    <ul class="tablist">
+      <li><a href="files.html"><span>Файлы</span></a></li>
+      <li><a href="globals.html"><span>Список&#160;членов&#160;всех&#160;файлов</span></a></li>
+    </ul>
+  </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>Указатель</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Классы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Файлы</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Функции</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Переменные</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Определения типов</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Макросы</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">Model.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_model_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#pragma once</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor"></span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;chrono&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_tool_8h.html">Tool.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;</div>
+<div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="_model_8h.html#a643c167434f5f468617cce8c0f3a3d32">    8</a></span>&#160;<span class="keyword">using</span> <a class="code" href="_model_8h.html#a643c167434f5f468617cce8c0f3a3d32">deta</a> = std::chrono::time_point&lt;std::chrono::system_clock&gt;;</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="class_point2_d.html">   12</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_point2_d.html">Point2D</a></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">Point2D</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="class_point2_d.html#a1960ff3b89d1854c7f0242240c5e7fc8">~Point2D</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_point2_d.html#a0c8f7f198d9399c55564338407963c0b">   18</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point2_d.html#a0c8f7f198d9399c55564338407963c0b">GetX</a>() { <span class="keywordflow">return</span> m_x; };</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="class_point2_d.html#a56c9ef3be81fe4aea54ccb2862662bd5">   19</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point2_d.html#a56c9ef3be81fe4aea54ccb2862662bd5">SetX</a>(<span class="keywordtype">float</span> x) { m_x = x; };</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_point2_d.html#a223eec505d97f94b6d9d12506b5d91f7">   21</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_point2_d.html#a223eec505d97f94b6d9d12506b5d91f7">GetY</a>() { <span class="keywordflow">return</span> m_y; };</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="class_point2_d.html#a0009d0f84e9ceb3ee79cb999e393f823">   22</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_point2_d.html#a0009d0f84e9ceb3ee79cb999e393f823">SetY</a>(<span class="keywordtype">float</span> y) { m_y = y; };</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keyword">enum</span> contourFlags {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        Normal,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        Smooth,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        Symmetrical,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        Control</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    };</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    contourFlags    m_Flag;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">float</span>           m_x;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">float</span>           m_y;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_contour.html">   40</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_contour.html">Contour</a></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="class_contour.html#ad464e79a4481062c9bb0544651e78a30">Contour</a>();</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_contour.html#aa2ffcfa4b81650754be4a38d0a81e90f">~Contour</a>();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_contour.html#a0c801d417325c2a71ec31286fc19ff21">AddPoint</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="class_point2_d.html">Point2D</a>* <a class="code" href="class_contour.html#a1bdec6036ea34ce888e5a215f882a107">GetPoint</a>();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::vector&lt;Point2D&gt; m_Points;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;};</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="class_graf_document.html">   56</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_graf_document.html">GrafDocument</a> : <span class="keyword">public</span> <a class="code" href="class_observable.html">Observable</a></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{   </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <a class="code" href="class_graf_document.html#a6d12dcd7ec655bd30ded6412379da4cb">GrafDocument</a>();</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="class_graf_document.html#a1a0c0c282139c0c7f48965b87d1d7b44">~GrafDocument</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_graf_document.html#adac7cdbee5b206c0e185d1a9ccde263f">Create</a>(std::chrono::time_point&lt;std::chrono::system_clock&gt; creatingDetaTime, std::string autor);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_graf_document.html#ab551af1a73565df8bd8ca3e8d5512f31">SaveDocument</a>(std::string path);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_graf_document.html#a055ab2a466d07f072ca527fcded543b9">LoadDocument</a>(std::string path);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_graf_document.html#accac4c66e1a00f1c7f210a70ac8c93ca">SetCreatingDeta</a>(<span class="keyword">const</span> <a class="code" href="_model_8h.html#a643c167434f5f468617cce8c0f3a3d32">deta</a> creatingDetaTime);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_graf_document.html#ab81847e5d73888f3c9037fb7cfe93b08">SetAutor</a>(<span class="keyword">const</span> std::string&amp; autorName);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="_model_8h.html#a643c167434f5f468617cce8c0f3a3d32">deta</a> <a class="code" href="class_graf_document.html#aea985bcb6a8f388fea3a507fa4d7ba42">GetCreatingDeta</a>();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    std::string&amp; <a class="code" href="class_graf_document.html#afe416b1d782a0dedffc2cbd1d7a78a09">GetAutor</a>();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::vector&lt;Contour&gt; m_model;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="_model_8h.html#a643c167434f5f468617cce8c0f3a3d32">deta</a>            m_createDeta;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string     m_autor;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="ttc" id="class_point2_d_html_a56c9ef3be81fe4aea54ccb2862662bd5"><div class="ttname"><a href="class_point2_d.html#a56c9ef3be81fe4aea54ccb2862662bd5">Point2D::SetX</a></div><div class="ttdeci">void SetX(float x)</div><div class="ttdef"><b>Definition:</b> Model.h:19</div></div>
+<div class="ttc" id="class_graf_document_html_afe416b1d782a0dedffc2cbd1d7a78a09"><div class="ttname"><a href="class_graf_document.html#afe416b1d782a0dedffc2cbd1d7a78a09">GrafDocument::GetAutor</a></div><div class="ttdeci">std::string &amp; GetAutor()</div><div class="ttdef"><b>Definition:</b> Model.cpp:9</div></div>
+<div class="ttc" id="class_graf_document_html_a1a0c0c282139c0c7f48965b87d1d7b44"><div class="ttname"><a href="class_graf_document.html#a1a0c0c282139c0c7f48965b87d1d7b44">GrafDocument::~GrafDocument</a></div><div class="ttdeci">~GrafDocument()</div><div class="ttdef"><b>Definition:</b> Model.cpp:36</div></div>
+<div class="ttc" id="class_graf_document_html_a055ab2a466d07f072ca527fcded543b9"><div class="ttname"><a href="class_graf_document.html#a055ab2a466d07f072ca527fcded543b9">GrafDocument::LoadDocument</a></div><div class="ttdeci">void LoadDocument(std::string path)</div><div class="ttdef"><b>Definition:</b> Model.cpp:48</div></div>
+<div class="ttc" id="class_contour_html_aa2ffcfa4b81650754be4a38d0a81e90f"><div class="ttname"><a href="class_contour.html#aa2ffcfa4b81650754be4a38d0a81e90f">Contour::~Contour</a></div><div class="ttdeci">~Contour()</div><div class="ttdef"><b>Definition:</b> Model.cpp:19</div></div>
+<div class="ttc" id="class_point2_d_html_a1960ff3b89d1854c7f0242240c5e7fc8"><div class="ttname"><a href="class_point2_d.html#a1960ff3b89d1854c7f0242240c5e7fc8">Point2D::~Point2D</a></div><div class="ttdeci">~Point2D()</div><div class="ttdef"><b>Definition:</b> Model.cpp:64</div></div>
+<div class="ttc" id="class_contour_html_ad464e79a4481062c9bb0544651e78a30"><div class="ttname"><a href="class_contour.html#ad464e79a4481062c9bb0544651e78a30">Contour::Contour</a></div><div class="ttdeci">Contour()</div><div class="ttdef"><b>Definition:</b> Model.cpp:15</div></div>
+<div class="ttc" id="class_graf_document_html_ab551af1a73565df8bd8ca3e8d5512f31"><div class="ttname"><a href="class_graf_document.html#ab551af1a73565df8bd8ca3e8d5512f31">GrafDocument::SaveDocument</a></div><div class="ttdeci">void SaveDocument(std::string path)</div><div class="ttdef"><b>Definition:</b> Model.cpp:44</div></div>
+<div class="ttc" id="class_point2_d_html_a223eec505d97f94b6d9d12506b5d91f7"><div class="ttname"><a href="class_point2_d.html#a223eec505d97f94b6d9d12506b5d91f7">Point2D::GetY</a></div><div class="ttdeci">float GetY()</div><div class="ttdef"><b>Definition:</b> Model.h:21</div></div>
+<div class="ttc" id="class_point2_d_html"><div class="ttname"><a href="class_point2_d.html">Point2D</a></div><div class="ttdoc">Class Point for 2d. </div><div class="ttdef"><b>Definition:</b> Model.h:12</div></div>
+<div class="ttc" id="class_graf_document_html"><div class="ttname"><a href="class_graf_document.html">GrafDocument</a></div><div class="ttdef"><b>Definition:</b> Model.h:56</div></div>
+<div class="ttc" id="_tool_8h_html"><div class="ttname"><a href="_tool_8h.html">Tool.h</a></div></div>
+<div class="ttc" id="class_graf_document_html_ab81847e5d73888f3c9037fb7cfe93b08"><div class="ttname"><a href="class_graf_document.html#ab81847e5d73888f3c9037fb7cfe93b08">GrafDocument::SetAutor</a></div><div class="ttdeci">void SetAutor(const std::string &amp;autorName)</div><div class="ttdef"><b>Definition:</b> Model.cpp:56</div></div>
+<div class="ttc" id="_model_8h_html_a643c167434f5f468617cce8c0f3a3d32"><div class="ttname"><a href="_model_8h.html#a643c167434f5f468617cce8c0f3a3d32">deta</a></div><div class="ttdeci">std::chrono::time_point&lt; std::chrono::system_clock &gt; deta</div><div class="ttdef"><b>Definition:</b> Model.h:8</div></div>
+<div class="ttc" id="class_graf_document_html_a6d12dcd7ec655bd30ded6412379da4cb"><div class="ttname"><a href="class_graf_document.html#a6d12dcd7ec655bd30ded6412379da4cb">GrafDocument::GrafDocument</a></div><div class="ttdeci">GrafDocument()</div><div class="ttdef"><b>Definition:</b> Model.cpp:32</div></div>
+<div class="ttc" id="class_observable_html"><div class="ttname"><a href="class_observable.html">Observable</a></div><div class="ttdef"><b>Definition:</b> Tool.h:15</div></div>
+<div class="ttc" id="class_point2_d_html_a0c8f7f198d9399c55564338407963c0b"><div class="ttname"><a href="class_point2_d.html#a0c8f7f198d9399c55564338407963c0b">Point2D::GetX</a></div><div class="ttdeci">float GetX()</div><div class="ttdef"><b>Definition:</b> Model.h:18</div></div>
+<div class="ttc" id="class_contour_html_a0c801d417325c2a71ec31286fc19ff21"><div class="ttname"><a href="class_contour.html#a0c801d417325c2a71ec31286fc19ff21">Contour::AddPoint</a></div><div class="ttdeci">void AddPoint()</div><div class="ttdef"><b>Definition:</b> Model.cpp:23</div></div>
+<div class="ttc" id="class_contour_html"><div class="ttname"><a href="class_contour.html">Contour</a></div><div class="ttdef"><b>Definition:</b> Model.h:40</div></div>
+<div class="ttc" id="class_graf_document_html_accac4c66e1a00f1c7f210a70ac8c93ca"><div class="ttname"><a href="class_graf_document.html#accac4c66e1a00f1c7f210a70ac8c93ca">GrafDocument::SetCreatingDeta</a></div><div class="ttdeci">void SetCreatingDeta(const deta creatingDetaTime)</div><div class="ttdef"><b>Definition:</b> Model.cpp:52</div></div>
+<div class="ttc" id="class_point2_d_html_a0009d0f84e9ceb3ee79cb999e393f823"><div class="ttname"><a href="class_point2_d.html#a0009d0f84e9ceb3ee79cb999e393f823">Point2D::SetY</a></div><div class="ttdeci">void SetY(float y)</div><div class="ttdef"><b>Definition:</b> Model.h:22</div></div>
+<div class="ttc" id="class_point2_d_html_a2415006d697f1c222c17254bdd302098"><div class="ttname"><a href="class_point2_d.html#a2415006d697f1c222c17254bdd302098">Point2D::Point2D</a></div><div class="ttdeci">Point2D()</div><div class="ttdef"><b>Definition:</b> Model.cpp:60</div></div>
+<div class="ttc" id="class_graf_document_html_adac7cdbee5b206c0e185d1a9ccde263f"><div class="ttname"><a href="class_graf_document.html#adac7cdbee5b206c0e185d1a9ccde263f">GrafDocument::Create</a></div><div class="ttdeci">void Create(std::chrono::time_point&lt; std::chrono::system_clock &gt; creatingDetaTime, std::string autor)</div><div class="ttdef"><b>Definition:</b> Model.cpp:40</div></div>
+<div class="ttc" id="class_contour_html_a1bdec6036ea34ce888e5a215f882a107"><div class="ttname"><a href="class_contour.html#a1bdec6036ea34ce888e5a215f882a107">Contour::GetPoint</a></div><div class="ttdeci">Point2D * GetPoint()</div><div class="ttdef"><b>Definition:</b> Model.cpp:27</div></div>
+<div class="ttc" id="class_graf_document_html_aea985bcb6a8f388fea3a507fa4d7ba42"><div class="ttname"><a href="class_graf_document.html#aea985bcb6a8f388fea3a507fa4d7ba42">GrafDocument::GetCreatingDeta</a></div><div class="ttdeci">deta GetCreatingDeta()</div><div class="ttdef"><b>Definition:</b> Model.cpp:4</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.6
+</small></address>
+</body>
+</html>
